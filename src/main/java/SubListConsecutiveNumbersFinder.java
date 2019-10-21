@@ -11,6 +11,7 @@ public class SubListConsecutiveNumbersFinder {
 
     public static void main(String[] args) {
 
+        System.out.println("Inform the array size: ");
         int arraySize = scanner.nextInt();
         int[] input = new int[arraySize];
 
