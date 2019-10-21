@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SubListConsecutiveNumbersFinderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-21T16:57:22" hostname="S2IT-faquino-7472" time="0.017">
+<testsuite name="SubListConsecutiveNumbersFinderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-10-21T17:03:24" hostname="S2IT-faquino-7472" time="0.017">
   <properties/>
-  <testcase name="shouldReturnOne" classname="SubListConsecutiveNumbersFinderTest" time="0.008"/>
-  <testcase name="shouldReturnSix" classname="SubListConsecutiveNumbersFinderTest" time="0.001"/>
-  <testcase name="shouldReturnTen" classname="SubListConsecutiveNumbersFinderTest" time="0.004"/>
-  <testcase name="shouldReturnTwo" classname="SubListConsecutiveNumbersFinderTest" time="0.001"/>
+  <testcase name="shouldReturnOne" classname="SubListConsecutiveNumbersFinderTest" time="0.009"/>
+  <testcase name="shouldReturnSix" classname="SubListConsecutiveNumbersFinderTest" time="0.002"/>
+  <testcase name="shouldReturnTen" classname="SubListConsecutiveNumbersFinderTest" time="0.002"/>
+  <testcase name="shouldReturnTwo" classname="SubListConsecutiveNumbersFinderTest" time="0.0"/>
   <testcase name="shouldReturnFour" classname="SubListConsecutiveNumbersFinderTest" time="0.001"/>
+  <testcase name="shouldReturnZero" classname="SubListConsecutiveNumbersFinderTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

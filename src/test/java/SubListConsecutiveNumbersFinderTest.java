@@ -4,6 +4,18 @@ import org.junit.Test;
 public class SubListConsecutiveNumbersFinderTest {
 
     @Test
+    public void shouldReturnZero() {
+        // Arrange
+        int[] input = new int[] { };
+
+        // Act
+        int result = new SubListConsecutiveNumbersFinder().calculateSubarray(input);
+
+        // Assert
+        Assert.assertEquals(0, result);
+    }
+
+    @Test
     public void shouldReturnOne() {
         // Arrange
         int[] input = new int[] { 1, 6 };
