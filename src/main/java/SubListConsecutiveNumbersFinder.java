@@ -1,14 +1,44 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.OptionalInt;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class SubListConsecutiveNumbersFinder {
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        int[] input = new int[] { 1, 6 };
+
+        int arraySize = scanner.nextInt();
+        int[] input = new int[arraySize];
+
+        for (int i = 0; i < input.length; i++) {//10, 5, 2, 3, 4
+            int item = scanner.nextInt();
+
+            addItemArray(input, i, item);
+        }
+
         int result = new SubListConsecutiveNumbersFinder().calculateSubarray(input);
         System.out.println("result = " + result);
+    }
+
+    private static void addItemArray(int[] array, int i, int item) {
+        if(itemAlreadyExist(item, array)) {
+            System.out.println("Item already exist, try another:");
+            int newItem = scanner.nextInt();
+
+            addItemArray(array, i, newItem);
+        } else {
+            array[i] = item;
+        }
+    }
+
+    private static boolean itemAlreadyExist(Integer item, int[] array) {
+        OptionalInt any = Arrays.stream(array).filter(item::equals).findAny();
+
+        return any.isPresent();
     }
 
     public int calculateSubarray(int[] array) {
