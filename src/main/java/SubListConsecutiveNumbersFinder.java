@@ -14,7 +14,7 @@ public class SubListConsecutiveNumbersFinder {
         int arraySize = scanner.nextInt();
         int[] input = new int[arraySize];
 
-        for (int i = 0; i < input.length; i++) {//10, 5, 2, 3, 4
+        for (int i = 0; i < input.length; i++) {
             int item = scanner.nextInt();
 
             addItemArray(input, i, item);
